@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ROCK FITNESS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <Style>
+        body{
+            margin:0px;
+            padding: 0px;
+            background: url("PICTURES/back.JPG");
+            height: auto;
+            color: white;
+            font-weight: 1px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .header{
+            background-color:transparent;
+            /*border: 2px solid green;*/
+        }
+        .left{
+            /*border: 2px solid red;*/
+            position: absolute;
+            top: 20px;
+            left: 60px;
+        }
+        .mid{
+            /*border: 2px solid red;*/
+            display:block;
+            width: 40%;
+            margin: 31px auto;
+            /*margin-left: 33%;*/
+        }
+        .right{
+            /*border: 2px solid red;*/
+            position: absolute;
+            top: 46px;
+            right: 34px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            color:white;
+            font-size: 18px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration:underline;
+            color: gray;
+        }
+
+        .left img{
+            width:100px;
+            display:block;
+            margin: auto;
+        }
+        .left div{
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .btn{
+            margin: 0px 9px;
+            padding:4px 14px;
+            color: white;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor:pointer;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+        .btn:hover{
+            background-color: rgb(94, 90, 90);
+            color: rgba(13, 255, 0, 0.729);
+        }
+        .container{
+            border: 2px solid white;
+            margin: 102px 127px;
+            padding:38px 38px;
+            width: 33%;
+            border-radius: 10px;
+            /*box-shadow: 10px 5px 5px red;*/
+            /*box-shadow:
+    inset 0 -3em 3em rgba(0, 200, 0, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgba(200, 0, 0, 0.6);*/
+    box-shadow: 0px -25px 20px -20px rgba(35, 244, 3, 0.45),
+25px 0px 20px -20px rgba(35, 244, 3, 0.45),
+0px 25px 20px -20px rgba(35, 244, 3, 0.45),
+-25px 0px 20px -20px rgba(35, 244, 3, 0.45);
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 73%;
+            padding: 2px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 73%;
+            margin: 11px auto;
+        }
+        .btn a{
+            color: white;
+            text-decoration: none;
+        }
+        .btn a:hover{
+            
+            color: rgb(201, 0, 0);
+            /*text-decoration: none;*/
+        }
+    </Style>
+</head>
+<body>
+    <header class="header">
+        <!--left box  for logo-->
+        <div class="left">
+            <img src="PICTURES/DUMBLE (1).png" alt="kuchh bhi">
+            <div>ROCK FITNNESS</div>
+        </div>
+        <!--mid box for navigation menu-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn"><a href="tel:+917644915433">Call us now</a></button>
+            <button class="btn"><a href="mailto:atulaman65@gmail.com">Email us</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Join the best gym of Patna now
+        </h1>
+        <form action="noaction.php">
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+             </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+             </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+             </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+             </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+             </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+             </div>
+             <button class="btn">
+                submit
+             </button>
+        </form>
+        
+    </div>
+</body>
+</html>
